@@ -17,6 +17,7 @@ public class VirtualThreadsPractice {
         );
 
         latch.await();
+        new StructureConcurrency().shutdownOnFailure();
 
     }
 }
